@@ -193,7 +193,7 @@ nav ul li a:hover:after {
 /* Hamburger end */
 /* Banner */
 .banner_section{
-    background-image: url(../assets/physion.jpg), linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    background-image: url(../assets/physion.webp), linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
     background-blend-mode: overlay;
     background-repeat: no-repeat;
     background-size: cover;
