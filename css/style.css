@@ -1,0 +1,691 @@
+/* Fonts */
+@font-face {
+    font-family: "Playfair_Bold";
+    src: url(../fonts/PlayfairDisplay-Bold.woff2);
+}
+@font-face {
+    font-family: "Oswald";
+    src: url(../fonts/Oswald-Regular.woff2);
+}
+@font-face {
+    font-family: "Karla_Reg";
+    src: url(../fonts/Karla-Regular.woff2);
+}
+@font-face {
+    font-family: "Karla_Med";
+    src: url(../fonts/Karla-Medium.woff2);
+}
+@font-face {
+    font-family: "Karla_Bold";
+    src: url(../fonts/Karla-Bold.woff2);
+}
+
+/* Default */
+a {
+    text-decoration: none;
+}
+.text_center{
+    text-align: center;
+}
+.section_padding {
+    padding: 60px 0;
+}
+p{
+    font-family: "Karla_Reg";
+    margin-bottom: 0.5rem;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+.container_sm {
+    max-width: 85%;
+    margin: 0 auto;
+}
+.lg_background{
+    background-color: #f7f7f7;
+}
+.mobile_nav{
+    display: none;
+}
+/* Header */
+header{
+    background-color: #00216f;
+}
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+}
+nav ul li{
+    display: inline-block;
+   
+}
+nav ul li a {
+    margin: 0 0.625rem;
+    font-family: "Karla_Reg";
+    font-size: 1.125rem;
+    color: #ffffff;
+    position: relative;
+}
+nav ul li a.active:after {
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    background: #fff;
+    width: 100%;
+}
+nav ul li a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+nav ul li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+/* Hamburger Start */
+.p-menu1{
+    height: 100%;
+ }
+ 
+ /* Hamburger */
+.hamburger1 {
+   height: 45px;
+   margin: 10px;
+   display: -ms-grid;
+   display: grid;
+   grid-template-rows: repeat(3, 1fr);
+   justify-items: center;
+   z-index: 120;
+}
+.hamburger1 div {
+   background-color: #fff;
+   position: relative;
+   width: 40px;
+   height: 5px;
+   margin-top: 7px;
+   -webkit-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+}
+#toggle1 {
+   display: none;
+} 
+#toggle1:checked + .hamburger1 .top {
+   -webkit-transform: rotate(-45deg);
+           transform: rotate(-45deg);
+   margin-top: 22.5px;
+} 
+#toggle1:checked + .hamburger1 .meat {
+   -webkit-transform: rotate(45deg);
+           transform: rotate(45deg);
+   margin-top: -5px;
+}
+#toggle1:checked + .hamburger1 .bottom {
+   -webkit-transform: scale(0);
+    transform: scale(0);
+}
+#toggle1:checked ~ .menu1 {
+   height: 400px;
+}
+ /* Menu */
+.menu1 {
+    left: 0;
+    right: 0;
+   width: 100%;
+   background-color: #02173F;
+   margin: 0;
+   display: -ms-grid;
+   display: grid;
+   grid-template-rows: 1fr repeat(4, 0.5fr);
+   grid-row-gap: 25px;
+   padding: 0;
+   list-style: none;
+   clear: both;
+   width: auto;
+   text-align: center;
+   height: 0px;
+   overflow: hidden;
+   transition: height .4s ease;
+   z-index: 120;
+   -webkit-transition: all 0.3s ease;
+   transition: all 0.3s ease;
+   position: absolute;
+}
+.menu1 a:first-child {
+   margin-top: 25px;
+}
+ 
+.menu1 a:last-child {
+   margin-bottom: 40px;
+}
+ 
+.link1 {
+   width: 100%;
+   margin: 0;
+   padding: 10px 0;
+   font: 700 20px 'Oswald', sans-serif;
+   color: #fff;
+   letter-spacing: 2px;
+}
+
+.link1:hover {
+   background-color: #fff;
+   color: rgb(61, 61, 61);
+   -webkit-transition: all 0.3s ease;
+   transition: all 0.3s ease;
+}
+/* Hamburger end */
+/* Banner */
+.banner_section{
+    background-image: url(../assets/physion.jpg), linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.banner_container{
+    padding: 150px 0;
+}
+.banner_section .banner_title {
+    font-family: "Playfair_Bold";
+    font-size: 2.1875rem;
+    color: #ffffff;
+}
+.banner_section .banner_descp {
+    font-family: "Karla_Reg";
+    color: #ffffff;
+    font-size: 1.125rem;
+    margin-top: 1.5rem;
+}
+.banner_section .banner_btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #feb336;
+    color: #feb336;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    font-family: "Karla_Bold";
+    transition: .3s all;
+}
+.banner_section .banner_btn:hover{
+    color: #00216f;
+    background-color: #feb336;
+    border: 1px solid #feb336;
+}
+
+/* Slider section */
+.heading_title h2{
+    font-family: "Playfair_Bold";
+    font-size: 2.625rem;
+    color: #00216f;
+}
+.book_now_services {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.book_now_services .book_now_single {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 30px 80px 30px; 
+    text-align: center;
+}
+.book_now_services .book_now_single .title{
+    font-family: "Karla_Bold";
+    font-size: 1.75rem;
+    color: #ffffff;
+}
+.book_now_services .book_bg_1 {
+    background-image: url(../assets/physio_descp_1.webp), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay;
+}
+.book_now_services .book_bg_2 {
+    background-image: url(../assets/physio_descp_2.webp), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay;
+}
+.book_now_services .book_bg_3 {
+    background-image: url(../assets/physio_descp_3.webp), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay;
+}
+.book_now_services .book_now_single .book_now{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #feb336;
+    color: #00216f;
+    background-color: #feb336;
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    font-family: "Karla_Bold";
+    transition: .3s all;
+}
+.book_now_services .book_now_single .book_now:hover{
+    color: #00216f;
+    background-color: #feb336;
+    border: 1px solid #feb336;
+}
+
+/* Testimonial Section */
+.testimonial_slider {
+    max-width: 80%;
+    margin: 30px auto;
+}
+.testimonial_slider .slick-next:before, 
+.testimonial_slider .slick-prev:before {
+    font-size: 22px;
+    color: #00216f;
+}
+.testimonial_slider .testimonial_slide {
+    text-align: center;
+}
+.testimonial_slider .testimonial_slide img{
+    margin: 0 auto 1.25rem;
+}
+.testimonial_slider .testimonial_slide .testimonial_text {
+    font-family: "Karla_Reg";
+    font-size: 1.125rem;
+    font-style: italic;
+}
+.testimonial_slider .testimonial_slide .testmonial_name {
+    font-family: "Oswald";
+    font-size: 1.125rem;
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer{
+    background-color: #00216f;
+}
+.footer_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    color: #fff;
+    font-family: "Karla_Med";
+}
+
+/* Inner pages */
+/* Inner banner */
+.inner_banner{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inner_banner_container{
+    padding: 140px 0;
+}
+.inner_banner_container .in_banner_title {
+    font-family: "Playfair_Bold";
+    font-size: 3rem;
+    color: #ffffff;
+}
+.about_banner{
+    background-image: url(../assets/about_banner.webp), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay;
+}
+/* Content Section */
+.content_section {
+    padding: 60px 0;
+}
+.content_section_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.content_section_container .text_section{
+    flex: 0 0 65;
+}
+.content_section_container .img_section {
+    flex:  0 0 35%;
+}
+.bullet_section{
+    padding: 40px 0;
+    margin: 0 auto;
+    max-width: 90%;
+}
+.bullet_section .bullet_pointers {
+    padding-top: 20px;
+}
+.bullet_section .bullet_pointers ul {
+    font-family: "Karla_Reg";
+    max-width: 60%;
+    margin: 0 auto;
+}
+.bullet_section .bullet_pointers ul li {
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid lightblue;
+}
+/* Services */
+.service_banner{
+    background-image: url(../assets/services_banner.webp), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay;
+}
+.services_section {
+    padding: 50px 0; 
+}
+.service_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.service_container .img_block {
+    flex:  0 0 30%;
+}
+.service_container .service_descp {
+    flex: 0 0 70%;
+}
+.service_container .service_descp h3.title{
+    font-family: "Playfair_Bold";
+    font-size: 2.5rem;
+    color: #00216f;
+    margin-bottom: 0.75rem;
+}
+.service_container .service_descp p {
+    font-size: 1.125rem;
+}
+/* Rate block */
+.rate_block {
+    padding: 50px 0;
+}
+.rate_container .rate_card {
+    max-width: 500px;
+    margin: 30px auto;
+    background-color: #00216f;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.rate_container .rate_card .time {
+    font-family: "Karla_Bold";
+    font-size: 2.25rem;
+}
+.rate_container .rate_card .rate {
+    font-family: "Karla_Med";   
+    font-size: 1.75rem;
+}
+.rate_container .rate_card .contact_btn a{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #feb336;
+    color: #feb336;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-family: "Karla_Bold";
+    transition: .3s all;
+}
+.rate_container .rate_card .contact_btn a:hover{
+    color: #00216f;
+    background-color: #feb336;
+    border: 1px solid #feb336;
+}
+
+/* Specialization */
+.specialization_block {
+    padding: 50px 0;
+}
+.specialization_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 4rem;
+}
+.specialization_block img {
+    border-radius: 50%;
+}
+.specialization_block .special_single .special_img .title {
+    font-family: "Playfair_Bold";
+    font-size: 1.25rem;
+    color: #00216f;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+.specialization_block .special_single .special_descp ul{
+    font-family: "Karla_Reg";
+    padding: 20px 10px;
+    font-size: 1rem;
+}
+.specialization_block .special_single .special_descp ul .more_text{
+    display: none;
+}
+.specialization_block .special_single .special_descp ul .moreless_button {
+    font-family: "Karla_Bold";
+    padding: 5px 10px;
+    font-size: 1.125rem;
+    background-color: #feb336;
+    color: #00216f;
+}
+.specialization_block .special_single .special_descp ul li {
+    margin-bottom: 0.75rem;
+}
+/* Contact us */
+.contact_banner{
+    background-image: url(../assets/contact_banner.webp), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay;
+}
+.whatsapp_btn {
+    text-align: center;
+}
+.whatsapp_btn a {
+    width: 300px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Karla_Bold";
+    padding: 25px 25px 25px 10px;
+    font-size: 1.5rem;
+    background-color: #feb336;
+    color: #00216f;
+    position: relative;
+    margin-top: 20px;
+}
+.whatsapp_btn a img {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 35px;
+    top: 18px;
+}
+.owner_name_block {
+    text-align: center;
+    padding: 30px 0;
+}
+.owner_name_block .heading_title {
+    font-size: 2.25rem;
+}
+.owner_name_block .owner_name {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-family: "Oswald";
+}
+.owner_name_block .owner_descp {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: "Oswald";
+}
+.address_block {
+    padding: 40px 0;
+}
+.address_block .address_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.address_block .address_container .address_descp .title{
+    font-size: 2rem;
+    font-family: "Playfair_Bold";
+    color: #00216f;
+    margin-bottom: 0.7rem;
+}
+.address_block .address_container .address_descp .address_line{
+    font-size: 1.25rem;
+    font-family: "Karla_Bold";
+}
+.address_block .address_container .address_descp ,
+.address_block .address_container .timing_descp  {
+    flex: 0 0 50%;
+}
+
+.address_block .address_container .timing_descp table {
+    width: 100%;
+}
+.address_block .address_container .timing_descp table,
+.address_block .address_container .timing_descp tr {
+    border: 1px solid #00216f;
+}
+.address_block .address_container .timing_descp table th {
+    border: 1px solid #00216f;
+    font-size: 1.25rem;
+    font-family: "Karla_Bold";
+    padding: 10px;
+    text-align: left;
+}
+
+.address_block .address_container .timing_descp table tr td{
+    font-family: "Karla_Med";
+    padding: 10px;
+}
+.address_block .address_container .timing_descp table tr td:first-child {
+    border: 1px solid #00216f;
+    font-family: "Karla_Bold";
+    font-size: 1.25rem;
+}
+.map_block iframe {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Media Query */
+@media screen and (max-width: 480px) {
+    /* Common_block */
+    .section_padding {
+        padding: 40px 0;
+    }
+    .heading_title h2 {
+        font-size: 2rem;
+    }
+    .inner_banner_container .in_banner_title {
+        font-size: 1.75rem;
+    }
+    .services_section {
+        padding: 40px 0;
+    }
+    .container_sm {
+        max-width: 90%;
+    }
+    .mobile_nav{
+        display: block;
+    }
+    /* Header */
+    header .desktop_nav{
+        display: none;
+    }
+    /* Homepage */
+    .banner_container {
+        padding: 100px 0;
+    }
+    .banner_section .banner_title {
+        font-size: 1.5rem;
+    }
+    .banner_section .banner_descp {
+        font-size: 0.875rem;
+    }
+    .book_now_services {
+        flex-wrap: wrap;
+    }
+    .book_now_services .book_now_single {
+        flex: 0 0 85%;
+    }
+    .book_now_services .book_now_single .title {
+        font-size: 1.5rem;
+    }
+    /* Footer */
+    .footer_container {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .footer_container p {
+        width: 100%;
+        text-align: center;
+    }
+    /* About us page */
+    .content_section_container{
+        flex-wrap: wrap;
+    }
+    .content_section_container .img_section{
+        order: 1;
+        flex: 0 0 100%;
+    }
+    .content_section_container .text_section 
+    {
+        order: 2;
+        flex: 0 0 100%;
+    }
+    .bullet_section {
+        padding: 30px 0;
+        max-width: 95%;
+    }
+    .bullet_section .bullet_pointers ul {
+        max-width: 100%;
+    }
+    /* Services Page */
+    .service_container {
+        flex-wrap: wrap;
+    }
+    .service_container .img_block {
+        flex: 0 0 100%;
+        order: 1;
+    }
+    .service_container .service_descp{
+        flex: 0 0 100%;
+        order: 2;
+    }
+    .service_container .service_descp p {
+        font-size: 1rem;
+    }
+    .service_container .service_descp h3.title {
+        font-size: 1.5rem;
+    }
+    /* Specialization page */
+    .specialization_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* Contact us */
+    .whatsapp_btn a {
+        width: 280px;
+    }
+    .address_block .address_container {
+        flex-wrap: wrap;
+    }
+    .address_block .address_container .address_descp, .address_block .address_container .timing_descp {
+        flex: 0 0 100%;
+    }
+}
