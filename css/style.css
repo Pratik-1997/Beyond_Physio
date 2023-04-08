@@ -1,12 +1,12 @@
 /* Fonts */
-@font-face {
+/* @font-face {
     font-family: "Playfair_Bold";
     src: url(../fonts/PlayfairDisplay-Bold.woff2);
 }
 @font-face {
     font-family: "Oswald";
     src: url(../fonts/Oswald-Regular.woff2);
-}
+} 
 @font-face {
     font-family: "Karla_Reg";
     src: url(../fonts/Karla-Regular.woff2);
@@ -19,6 +19,53 @@
     font-family: "Karla_Bold";
     src: url(../fonts/Karla-Bold.woff2);
 }
+*/
+@font-face {
+    font-family: "Playfair_Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: local('Playfair_Bold'), local('Playfair_Bold'),
+      url(../fonts/PlayfairDisplay-Bold.woff2)
+        format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 400;
+    src: local('Oswald'), local('Oswald'),
+      url(../fonts/Oswald-Regular.woff2)
+        format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: "Karla_Reg";
+    font-style: normal;
+    font-weight: 400;
+    src: local('Karla_Reg'), local('Karla_Reg'),
+      url(../fonts/Karla-Regular.woff2)
+        format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: "Karla_Med";
+    font-style: normal;
+    font-weight: 500;
+    src: local('Karla_Med'), local('Karla_Med'),
+      url(../fonts/Karla-Medium.woff2)
+        format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: "Karla_Bold";
+    font-style: normal;
+    font-weight: 700;
+    src: local('Karla_Bold'), local('Karla_Bold'),
+      url(../fonts/Karla-Bold.woff2)
+        format('woff2');
+    font-display: swap;
+}
+
 
 /* Default */
 a {
