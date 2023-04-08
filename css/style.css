@@ -227,6 +227,7 @@ nav ul li a:hover:after {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    height: 540px;
 }
 .banner_container{
     padding: 150px 0;
