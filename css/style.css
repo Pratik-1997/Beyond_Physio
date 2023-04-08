@@ -52,6 +52,9 @@ img {
 .mobile_nav{
     display: none;
 }
+.pos_rel {
+    position: relative;
+}
 /* Header */
 header{
     background-color: #00216f;
@@ -225,6 +228,7 @@ nav ul li a:hover:after {
     padding: 0.5rem 1rem;
     font-family: "Karla_Bold";
     transition: .3s all;
+    border-radius: 5px;
 }
 .banner_section .banner_btn:hover{
     color: #00216f;
@@ -280,6 +284,7 @@ nav ul li a:hover:after {
     padding: 0.5rem 1rem;
     font-family: "Karla_Bold";
     transition: .3s all;
+    border-radius: 5px;
 }
 .book_now_services .book_now_single .book_now:hover{
     color: #00216f;
@@ -312,6 +317,19 @@ nav ul li a:hover:after {
     font-family: "Oswald";
     font-size: 1.125rem;
     margin-top: 1rem;
+}
+/* Bottom Curve */
+.bottom_curve::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    background-image: url(../assets/Ellipse.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 110px;
+    height: 100px;
 }
 
 /* Footer */
@@ -441,6 +459,7 @@ footer{
     padding: 0.5rem 1rem;
     font-family: "Karla_Bold";
     transition: .3s all;
+    border-radius: 5px;
 }
 .rate_container .rate_card .contact_btn a:hover{
     color: #00216f;
@@ -505,6 +524,7 @@ footer{
     color: #00216f;
     position: relative;
     margin-top: 20px;
+    border-radius: 5px;
 }
 .whatsapp_btn a img {
     width: 40px;
@@ -583,8 +603,55 @@ footer{
     max-width: 100%;
 }
 
+/* Popup */
+body{
+    position: relative;
+}
+.pop_up_block {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.pop_up_block .pop_up_container{
+    max-width: 900px;
+    padding: 60px 100px;
+    font-size: 1.5rem;
+    color: #fff;
+    font-family: "Karla_Med";
+    text-align: center;
+    background-color: #00216f;
+    position: relative;
+    overflow: hidden;
+}
+.pop_up_block .pop_up_container .close_btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: 1px solid #000;
+    color: #00216f;
+    background-color: gray;
+    width: 20px;
+    height: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.pop_up_block .pop_up_container img{
+    position: absolute;
+    bottom: -30px;
+    right: -20px;
+}
+
 /* Media Query */
 @media screen and (max-width: 480px) {
+    /* Popup block */
+    .pop_up_block {
+        top: 50vh;
+        width: 90%;
+    }
+    .pop_up_block .pop_up_container {
+        padding: 70px 25px;
+    }
     /* Common_block */
     .section_padding {
         padding: 40px 0;

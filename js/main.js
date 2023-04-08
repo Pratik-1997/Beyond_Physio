@@ -1,14 +1,24 @@
 $(document).ready(function(){
-  AOS.init();
+
+    // Aos
+    AOS.init();
   
+    // Popup
+    $(".pop_up_block .pop_up_container .close_btn").click(function(){
+      $(".pop_up_block").hide();
+    })
+    
+
+    // Testimonial Slider
     $('.testimonial_slider').slick({
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: false,
-    
     });
 
+
+    // More Less button
     $('.moreless_button').click(function() {
       $('.more_text').slideToggle();
       if ($('.moreless_button').text() == "Load More") {
