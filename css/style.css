@@ -675,6 +675,7 @@ body{
     .pop_up_block {
         top: 50vh;
         width: 90%;
+        height: 280px;
     }
     .pop_up_block .pop_up_container {
         padding: 70px 25px;
