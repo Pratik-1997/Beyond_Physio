@@ -1,25 +1,4 @@
 /* Fonts */
-/* @font-face {
-    font-family: "Playfair_Bold";
-    src: url(../fonts/PlayfairDisplay-Bold.woff2);
-}
-@font-face {
-    font-family: "Oswald";
-    src: url(../fonts/Oswald-Regular.woff2);
-} 
-@font-face {
-    font-family: "Karla_Reg";
-    src: url(../fonts/Karla-Regular.woff2);
-}
-@font-face {
-    font-family: "Karla_Med";
-    src: url(../fonts/Karla-Medium.woff2);
-}
-@font-face {
-    font-family: "Karla_Bold";
-    src: url(../fonts/Karla-Bold.woff2);
-}
-*/
 @font-face {
     font-family: "Playfair_Bold";
     font-style: normal;
@@ -724,6 +703,9 @@ body{
         display: none;
     }
     /* Homepage */
+    .banner_section{
+        height: 520px;
+    }
     .banner_container {
         padding: 100px 0;
     }
