@@ -498,12 +498,12 @@ footer{
 .specialization_block {
     padding: 50px 0;
 }
-.specialization_container {
+/* .specialization_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 1rem;
     grid-row-gap: 4rem;
-}
+} */
 .specialization_block img {
     border-radius: 50%;
 }
@@ -774,8 +774,23 @@ body{
         font-size: 1.5rem;
     }
     /* Specialization page */
-    .specialization_container {
+    /* .specialization_container {
         grid-template-columns: repeat(2, 1fr);
+    } */
+    .specialization_block .special_single {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+    .specialization_block .special_single .special_img .title {
+        font-size: 0.875rem;
+        margin-bottom: 0rem;
+        text-align: center;
+    }
+    .specialization_block .special_single .special_descp ul {
+        padding: 20px 0px;
+    }
+    .specialization_block .special_single .special_descp ul li {
+        font-size: 0.75rem;
     }
     /* Contact us */
     .whatsapp_btn a {
